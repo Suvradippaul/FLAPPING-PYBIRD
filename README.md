@@ -1,15 +1,12 @@
 # FLAPPING-PYBIRD
 
-This is a Flapping Bird Game made with Python using pygame 
+This is a clone of Flapping Bird Game made with Python 3 using pygame. 
 
 
-RUNNING THE GAME
-----------------
+# RUNNING THE GAME
 
-Install python from [here](https://www.python.org/downloads/)
+## CONTROLLING THE LITTLE BIRD
 
-Install pygame from command prompt by 
+You can make it fly by pressing <kbd>UP arrow</kbd> or <kbd>Space</kbd> and click <kbd>Esc</kbd> to exit the game. 
 
-```bash
-pip install pygame
-```
+Don't crash into any pipes! For every pair of pipe you pass without colliding, you get one point.
