@@ -29,11 +29,18 @@ Here are some screenshots of this game
  ```
  - Double click the ```FLAPPING_BIRD.exe``` to run the game
 
+---
+**NOTE :**
+  This method is only for Windows users. For running on Mac/Linux users, the project needs to be compiled on local machine. 
+
+---
+
 ### Controlling the little bird
 
 - You can make it fly by pressing <kbd>UP arrow</kbd> or <kbd>Space</kbd> and click <kbd>Esc</kbd> to exit the game. 
 
 - Don't crash into any pipes! For every pair of pipe you pass without colliding, you get one point.
+
 
 
 Enjoy the game xD
