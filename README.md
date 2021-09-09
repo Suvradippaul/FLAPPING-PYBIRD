@@ -15,11 +15,25 @@ Here are some screenshots of this game
 
 ## RUNNING THE GAME
 
-### CONTROLLING THE LITTLE BIRD
+### Cloning the game 
 
-You can make it fly by pressing <kbd>UP arrow</kbd> or <kbd>Space</kbd> and click <kbd>Esc</kbd> to exit the game. 
+- Clone the repo
+```bash
+    git clone https://github.com/Suvradippaul/FLAPPING-PYBIRD.git
+ ```
+ - Change the directory
+ ```bash
+    cd FLAPPING-PYBIRD
+    cd build
+    cd exe.win-amd64-3.9
+ ```
+ - Double click the ```FLAPPING_BIRD.exe``` to run the game
 
-Don't crash into any pipes! For every pair of pipe you pass without colliding, you get one point.
+### Controlling the little bird
+
+- You can make it fly by pressing <kbd>UP arrow</kbd> or <kbd>Space</kbd> and click <kbd>Esc</kbd> to exit the game. 
+
+- Don't crash into any pipes! For every pair of pipe you pass without colliding, you get one point.
 
 
 Enjoy the game xD
