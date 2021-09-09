@@ -39,7 +39,7 @@ Here are some screenshots of this game
 
 - You can make it fly by pressing <kbd>UP arrow</kbd> or <kbd>Space</kbd> and click <kbd>Esc</kbd> to exit the game. 
 
-- Don't crash into any pipes! For every pair of pipe you pass without colliding, you get one point.
+- Don't crash into any pipes or touch the ground! For every pair of pipe you pass without colliding, you get one point.
 
 
 
