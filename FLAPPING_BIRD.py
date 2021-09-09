@@ -12,12 +12,12 @@ SCREEN = pygame.display.set_mode((SCREENWIDTH, SCREENHEIGHT))
 GROUNDY = 408
 GAME_SPRITES = {}
 GAME_SOUNDS = {}
-PLAYER = 'bluebird-midflap.png'
-BACKGROUND = 'background-day.png'
-PIPE = 'pipe-green.png'
-GAMEOVER = 'gameover.png'
+PLAYER = 'Assets/Images/bluebird-midflap.png'
+BACKGROUND = 'Assets/Images/background-day.png'
+PIPE = 'Assets/Images/pipe-green.png'
+GAMEOVER = 'Assets/Images/gameover.png'
 pygame.mixer.init()
-backgrmusic = pygame.mixer.music.load('flappybackgrmusic.mp3')
+backgrmusic = pygame.mixer.music.load('Assets/Audios/flappybackgrmusic.mp3')
 pygame.mixer.music.play(-1)
 
 def welcomeScreen():
@@ -153,7 +153,7 @@ def mainGame():
 
         SCREEN.blit(GAME_SPRITES['base'], (0,408))
         SCREEN.blit(GAME_SPRITES['player'], (int(bird.x), int(bird.y)))
-        font = pygame.font.Font('ARCADECLASSIC.TTF', 30)
+        font = pygame.font.Font('Assets/Fonts/ARCADECLASSIC.TTF', 30)
         score_text = font.render(f"SCORE {score}",  True, (0,0,0))
         text_rect = score_text.get_rect(center = (int(SCREENWIDTH/2), int(SCREENHEIGHT/5)))
         SCREEN.blit(score_text, text_rect)
@@ -180,17 +180,17 @@ if __name__ == '__main__':
     pygame.init()
     FPSCLOCK = pygame.time.Clock()
     pygame.display.set_caption("Flappy Bird Game")
-    GAME_SPRITES['message'] = pygame.image.load('message.png').convert_alpha()
-    GAME_SPRITES['base'] = pygame.image.load('base.png').convert_alpha()
+    GAME_SPRITES['message'] = pygame.image.load('Assets/Images/message.png').convert_alpha()
+    GAME_SPRITES['base'] = pygame.image.load('Assets/Images/base.png').convert_alpha()
     GAME_SPRITES['pipe'] = (
         pygame.transform.rotate(pygame.image.load(PIPE).convert_alpha(), 180),
         pygame.image.load(PIPE).convert_alpha()
     )
 
-    GAME_SOUNDS['die'] = pygame.mixer.Sound('die.wav')
-    GAME_SOUNDS['hit'] = pygame.mixer.Sound('hit.wav')
-    GAME_SOUNDS['point'] = pygame.mixer.Sound('point.wav')
-    GAME_SOUNDS['wing'] = pygame.mixer.Sound('wing.wav')
+    GAME_SOUNDS['die'] = pygame.mixer.Sound('Assets/Audios/die.wav')
+    GAME_SOUNDS['hit'] = pygame.mixer.Sound('Assets/Audios/hit.wav')
+    GAME_SOUNDS['point'] = pygame.mixer.Sound('Assets/Audios/point.wav')
+    GAME_SOUNDS['wing'] = pygame.mixer.Sound('Assets/Audios/wing.wav')
 
     GAME_SPRITES['background'] = pygame.image.load(BACKGROUND).convert_alpha()
     GAME_SPRITES['player'] = pygame.image.load(PLAYER).convert_alpha()
