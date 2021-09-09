@@ -4,6 +4,15 @@
 This is a flapping bird game scripted in python using ```Pygame``` library.
 Pygame is a cross-platform set of Python modules designed for writing video games. It includes computer graphics and sound libraries designed to be used with the Python programming language.
 
+Here are some screenshots of this game
+
+[<img src="https://github.com/Suvradippaul/FLAPPING-PYBIRD/blob/master/Assets/Screenshots/Screenshot%201.png"
+    alt="Home screen" width= "286" height = "539">](https://github.com/Suvradippaul/FLAPPING-PYBIRD/blob/master/Assets/Screenshots/Screenshot%201.png)
+[<img src="https://github.com/Suvradippaul/FLAPPING-PYBIRD/blob/master/Assets/Screenshots/Screenshot%202.png"
+    alt="Home screen" width= "286" height = "539">](https://github.com/Suvradippaul/FLAPPING-PYBIRD/blob/master/Assets/Screenshots/Screenshot%202.png)
+
+
+
 ## RUNNING THE GAME
 
 ### CONTROLLING THE LITTLE BIRD
@@ -11,3 +20,9 @@ Pygame is a cross-platform set of Python modules designed for writing video game
 You can make it fly by pressing <kbd>UP arrow</kbd> or <kbd>Space</kbd> and click <kbd>Esc</kbd> to exit the game. 
 
 Don't crash into any pipes! For every pair of pipe you pass without colliding, you get one point.
+
+
+Enjoy the game xD
+
+### Contributions
+Feel free to make a PR for any kind of change you want to have in this project.
