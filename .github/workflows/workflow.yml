@@ -40,6 +40,6 @@ jobs:
       - name: Creating a commit
         run: git commit -m "added /build folder"
       - name: Pushing to repo
-        run: git push origin main
+        run: git push origin actions
       - name: Operation successful
         run: echo "Pushed successfully"
