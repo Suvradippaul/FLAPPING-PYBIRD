@@ -34,7 +34,7 @@ jobs:
       - name: Checking git status
         run: git status
       - name: Pulling updated source
-        run: git pull origin main
+        run: git pull origin master
       - name: Adding untracked files
         run: git add .
       - name: Creating a commit
