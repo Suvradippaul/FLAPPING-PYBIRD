@@ -36,7 +36,7 @@ jobs:
             cd ..
             cd ..
             pwd
-            ls -A
+            dir
 #            Xcopy Assets build\exe.win-amd64-3.9\Assets /E/H/C/I
         
       - name: Setting git config
