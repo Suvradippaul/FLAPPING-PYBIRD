@@ -27,6 +27,16 @@ jobs:
         run: pip list
       - name: Running setup.py
         run: python setup.py build
+      - name: Making dir of assets inside build
+        run: |
+            cd build\exe.win-amd64-3.9
+            mkdir Assets
+      - name: Copying the Assest folder to \build\exe.win-amd64-3.9
+        run: |
+            cd ..
+            cd ..
+            Xcopy Assets build\exe.win-amd64-3.9\Assets /E/H/C/I
+        
       - name: Setting git config
         run: |
             git config --global user.email "suvradip2000@gmail.com"
