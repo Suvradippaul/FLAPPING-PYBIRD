@@ -9,7 +9,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - name: Set up Python 3.9.6
+      - name: Set up Python 3.9
         uses: actions/setup-python@v2
         with:
           # Semantic version range syntax or exact version of a Python version
@@ -28,17 +28,9 @@ jobs:
       - name: Running setup.py
         run: python setup.py build
       - name: Making dir of assets inside build
-        run: |
-            cd build\exe.win-amd64-3.9
-            mkdir Assets
-      - name: Copying the Assest folder to \build\exe.win-amd64-3.9
-        run: |
-            cd ..
-            cd ..
-            pwd
-            dir
-#            Xcopy Assets build\exe.win-amd64-3.9\Assets /E/H/C/I
-        
+        run: mkdir build\exe.win-amd64-3.9\Assets
+      - name: Copying the Assets folder to build\exe.win-amd64-3.9
+        run: Xcopy Assets build\exe.win-amd64-3.9\Assets /E/H/C/I
       - name: Setting git config
         run: |
             git config --global user.email "suvradip2000@gmail.com"
