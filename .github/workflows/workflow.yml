@@ -34,12 +34,12 @@ jobs:
       - name: Checking git status
         run: git status
       - name: Pulling updated source
-        run: git pull origin actions
+        run: git pull origin master
       - name: Adding untracked files
         run: git add .
       - name: Creating a commit
         run: git commit -m "added /build folder"
       - name: Pushing to repo
-        run: git push origin actions
+        run: git push origin master
       - name: Operation successful
         run: echo "Pushed successfully"
