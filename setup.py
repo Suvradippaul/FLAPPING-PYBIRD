@@ -6,14 +6,14 @@ from cx_Freeze import setup, Executable
 build_exe_options = {"packages": ["os"], "excludes": ["tkinter"]}
 
 # base="Win32GUI" should be used only for Windows GUI app
-base = None
-if sys.platform == "win32":
-    base = "Win32GUI"
+# base = None
+# if sys.platform == "win32":
+#     base = "Win32GUI"
 
 setup(
     name = "Flapping PyBird",
     version = "1",
     description = "This is a flapping pybird game",
     options = {"build_exe": build_exe_options},
-    executables = [Executable("FLAPPING_BIRD.py", base=base)]
+    executables = [Executable("FLAPPING_BIRD.py", base="Console")]
 )
